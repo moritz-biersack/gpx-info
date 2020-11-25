@@ -1,8 +1,16 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './src/**/*.html',
+    './src/**/*.pug',
+    './src/**/*.vue',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+        colors: {
+          'lavender': '#544969',
+        },
+    },
   },
   variants: {
     extend: {},
